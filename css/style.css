@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section{
+     display: flex;
+    justify-content: center;
+    flex-direction: row;
+        flex-wrap: wrap;
+    align-items: baseline;
+    height: 100%;
+    width: 100%;
+}
+
+.searchbar {
+    width: 300px;
+    display: flex;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+
+input.searchReference {
+    border: 3px solid #e95c1e;
+    padding: 5px 50px 5px 10px;
+    height: 28px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+
+#searchContainer.active .searchReference{
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+.searchReference:focus{
+  color: #e95c1e;
+}
+
+.searchButton {
+    border: 1px solid #e95c1e;
+    border-radius: 0 5px 5px 0;
+    background: #e95c1e;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+}
+#searchContainer #suggestions{
+  display: none;
+  background: white;
+    border: 3px solid;
+    border-top: 3px dotted;
+    background-color: #ffffff;
+    color: #e95c1e;
+    border-radius: 0 0 5px 5px;
+    padding: 15px 15px 0 15px;
+    margin: 0;
+}
+#searchContainer.active #suggestions{
+   display: block;
+    
+}
+#suggestions li{
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  color: #e95c1e;
+  padding: 5px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#suggestions li:hover{
+  background-color: #e95c1e;
+  color: white;
+}
+svg{
+  width: 24px;
+  height: 30px;
+  fill:white;
+}
+
+p{
+    color: #e95c1e;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
